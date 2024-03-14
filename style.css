@@ -1,7 +1,35 @@
 :root {
-    --bg-color: grey;
+    --bg-color: #555358;
+    --primary-color: #5F6062;
+    --secondary-color: #7B7263;
+    --tertiary-color: #8E885F;
+
+    --primary-text-color: #C6CA53;
+    --secondary-text-color: #A19E5B;
+    --tertiary-text-color: #C9DCB3;
 }
 
 body {
     background-color: var(--bg-color);
+}
+
+.Title {
+    color: var(--primary-text-color);
+}
+
+.Subtitle {
+    color: var(--secondary-text-color);
+}
+.button {
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+.Description p {
+    color: var(--tertiary-text-color);
 }
