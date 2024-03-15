@@ -5,52 +5,64 @@
     <meta name="viewport" content="width-device.width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <meta name="googlebot" content="noindex" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    
+
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>Jacobo Galofre</title>
   </head>
   <body>
     <header>
       <div class="PresentationCard">
-        <img src="imgs/Jacobo_Galofre" class="Banner PresentationItem" alt="Jacobo Galofre's Portrait" />
-        <div class="MyInfo">
-          <h1 class="Title Fullname PresentationItem">Jacobo <span class="Subtitle">Galofre Calbeto</span></h1>
-          <h2 class="Subtitle PresentationItem">Game Dev / Software Programmer</h2>
+        <img
+          src="imgs/Jacobo_Galofre"
+          class="Image PresentationItem"
+          id="Banner"
+          alt="Jacobo Galofre's Portrait"
+        />
+        <div class="MyInfo PresentationItem">
+          <h1 class="Title" id="Fullname">
+            Jacobo <span class="Subtitle">Galofre Calbeto</span>
+          </h1>
+          <h2 class="Subtitle">Game Dev / Software Programmer</h2>
+          <ul class="SocialMedia PresentationItem">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jgalofre/"
+                class="icon SocialMediaItem"
+              >
+              <img class="svg" src="imgs/svg/LinkedIn.svg" alt="LinkedIn" width="50px"/>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/sherzock"
+                class="icon SocialMediaItem"
+              >
+              <img class="svg" src="imgs/svg/Github.svg" alt="GitHub" width="50px"/>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:jacobo.galofre@gmail.com"
+                class="icon SocialMediaItem"
+              >
+              <img class="svg" src="imgs/svg/Email.svg" alt="Email" width="50px"/>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="SocialMedia PresentationItem">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/jgalofre/"
-              class="icon SocialMediaItem"
-            >
-              <span class="label">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/sherzock" class="icon SocialMediaItem">
-              <span class="label">Github</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:jacobo.galofre@gmail.com"
-              class="icon SocialMediaItem"
-            >
-              <span class="label">Email</span>
-            </a>
-          </li>
-        </ul>
-        <a href="#second" class="button-type1">About Me</a>
-        <a href="#second" class="button-type2">My Work</a>
-        <a href="#second" class="button-type3">Experience</a>
+        <div class="PageButtons PresentationItem">
+          <a href="#second" class="button-type1">About Me</a>
+          <a href="#second" class="button-type2">My Work</a>
+          <a href="#second" class="button-type3">Experience</a>
+        </div>
       </div>
     </header>
     <section class="About" id="first">
@@ -187,7 +199,7 @@
               and implementation team and the QA team.
             </p>
           </div>
-          <a href="#" class="button">Learn More</a>
+          <a href="#" class="button-type1">Learn More</a>
         </article>
         <article class="Project">
           <img class="ProjectGif" src="" alt="Andro Dunos Remake gameplay" />
@@ -206,7 +218,7 @@
               needed.
             </p>
           </div>
-          <a href="#" class="button">Learn More</a>
+          <a href="#" class="button-type1">Learn More</a>
         </article>
         <article class="Project">
           <img class="ProjectGif" src="" alt="Torpedo Inbound gameplay" />
@@ -224,7 +236,7 @@
               game in under 24 hours.
             </p>
           </div>
-          <a href="#" class="button">Learn More</a>
+          <a href="#" class="button-type1">Learn More</a>
         </article>
         <article class="Project">
           <img class="ProjectGif" src="" alt="Radical Encounter gameplay" />
@@ -242,7 +254,7 @@
               all the characters.
             </p>
           </div>
-          <a href="#" class="button">Learn More</a>
+          <a href="#" class="button-type1">Learn More</a>
         </article>
         <article class="Project">
           <img class="ProjectGif" src="" alt="Fantasy Brawl gameplay" />
@@ -260,7 +272,7 @@
               programmer than as a designer.
             </p>
           </div>
-          <a href="#" class="button">Learn More</a>
+          <a href="#" class="button-type1">Learn More</a>
         </article>
         <article class="Project">
           <img class="ProjectGif" src="" alt="Resonance Engine UI" />
@@ -276,7 +288,7 @@
               on the Wwise SDK.
             </p>
           </div>
-          <a href="#" class="button">Learn More</a>
+          <a href="#" class="button-type1">Learn More</a>
         </article>
         <article class="Project">
           <img class="ProjectGif" src="" alt="Breakout Lab gameplay" />
@@ -294,7 +306,7 @@
               several code issues that came up during the development.
             </p>
           </div>
-          <a href="#" class="button">Learn More</a>
+          <a href="#" class="button-type1">Learn More</a>
         </article>
         <article class="Project">
           <img class="ProjectGif" src="" alt="Dark Myth gameplay" />
@@ -312,7 +324,7 @@
               page dungeon.
             </p>
           </div>
-          <a href="#" class="button">Learn More</a>
+          <a href="#" class="button-type1">Learn More</a>
         </article>
       </section>
     </section>
