@@ -17,7 +17,8 @@ body {
 
 header {
   background-color: var(--primary-color);
-  padding-bottom: 4em;
+  margin: 2em;
+  border-radius: 2em;
 }
 
 h1 {
@@ -99,6 +100,10 @@ li {
 
 #Banner {
   border-radius: 50%;
+  width: 30em;
+  border: solid;
+  border-color: var(--quaternary-color);
+  border-width: 0.5em;
 }
 
 a,
@@ -110,11 +115,6 @@ a,
   /* Color Filter for SVGs */
   filter: invert(23%) sepia(53%) saturate(2117%) hue-rotate(167deg)
     brightness(96%) contrast(98%);
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 
 /* Header */
@@ -129,13 +129,6 @@ a,
   column-gap: 2em;
   row-gap: 6em;
   padding: 2em;
-}
-
-.Image {
-  width: 30em;
-  border: solid;
-  border-color: var(--quaternary-color);
-  border-width: 0.5em;
 }
 
 .SocialMedia {
