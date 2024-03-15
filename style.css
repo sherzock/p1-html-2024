@@ -15,12 +15,6 @@ body {
   text-align: center;
 }
 
-header {
-  background-color: var(--primary-color);
-  margin: 2em;
-  border-radius: 2em;
-}
-
 h1 {
   font-size: 3em;
 }
@@ -43,6 +37,15 @@ a {
 
 li {
   list-style-type: none;
+}
+
+/* main Sections */
+
+.MainSection {
+  background-color: var(--primary-color);
+  padding: 2em;
+  margin: 2em;
+  border-radius: 2em;
 }
 
 /* Text classes */
@@ -82,7 +85,7 @@ li {
 }
 
 .button-type3 {
-  color: var(---color);
+  color: var(--senary-color);
   padding: 0.25em 0.5em;
   font-weight: 400;
   text-decoration: none;
@@ -152,3 +155,6 @@ a,
   justify-content: center;
   align-items: center;
 }
+
+
+/* About Me */
