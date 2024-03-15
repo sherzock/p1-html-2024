@@ -43,7 +43,7 @@ li {
 
 .MainSection {
   background-color: var(--primary-color);
-  padding: 2em;
+  padding: 4em;
   margin: 2em;
   border-radius: 2em;
 }
@@ -158,3 +158,36 @@ a,
 
 
 /* About Me */
+
+/* Skills */
+
+.SkillsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  gap: 4em;
+  margin: 2em;
+}
+
+/* Education */
+
+.EducationTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Work */
+
+.ProjectInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.ProjectGif {
+  width: 30em;
+  height:fit-content;
+  border-radius: 2em;
+}
