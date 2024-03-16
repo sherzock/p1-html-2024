@@ -1,17 +1,13 @@
 :root {
-  --primary-color: #355F35;
-  --secondary-color: #7EBE7E;
-  --tertiary-color: #233E23;
-  --quaternary-color: #4F694F;
-  --quinary-color: #91C591;
-  --senary-color: black;
-  --white: white;
+  --primary-color: #7EBE7E;
+  --secondary-color: #4F694F;
+  --tertiary-color: white;
 }
 
 /*Basic types */
 
 body {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   font-family: "Open Sans";
   text-align: center;
 }
@@ -43,7 +39,7 @@ li {
 /* main Sections */
 
 .MainSection {
-  background-color: var(--quaternary-color);
+  background-color: var(--secondary-color);
   padding: 4em;
   margin: 2em;
   border-radius: 2em;
@@ -52,11 +48,11 @@ li {
 /* Text classes */
 
 .Title {
-  color: var(--white);
+  color: var(--tertiary-color);
 }
 
 .Subtitle {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /*Text IDs */
@@ -73,21 +69,21 @@ li {
   font-weight: bold;
   border-radius: 2em;
   
-  color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
   border: solid;
   padding: 0.3em 0.6em;
 }
 
 .button:hover {
-  color: var(--quaternary-color);
-  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .button:active {
-  color: var(--white);
+  color: var(--tertiary-color);
   border: none;
-  background-color: var(--quaternary-color)
+  background-color: var(--secondary-color)
 }
 
 /* Images */
@@ -104,13 +100,13 @@ li {
   border-radius: 50%;
   width: 30em;
   border: solid;
-  border-color: var(--quaternary-color);
+  border-color: var(--secondary-color);
   border-width: 0.5em;
 }
 
 a,
 .Description p {
-  color: var(--white);
+  color: var(--tertiary-color);
   text-align: center;
 }
 
@@ -191,10 +187,6 @@ a,
 /* Work */
 
 .Project {
-  padding-bottom: 4vw;
-  border-bottom: 0.1em solid var(--quaternary-color);
-
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -204,9 +196,17 @@ a,
   justify-items: start;
   align-items: center;
   align-content: space-evenly;
+
 }
 
-.Project:last-of-type {
+article {
+  padding-bottom: 4vw;
+  border-bottom: 0.1em solid var(--primary-color);
+  padding-bottom: 16vh;
+  padding-top: 4vh;
+}
+
+article:last-of-type {
   border-bottom: none;
 }
 
@@ -233,7 +233,7 @@ a,
 .ExpElement {
   padding-top: 4em;
   padding-bottom: 4em;
-  border-bottom: 0.1em solid var(--quaternary-color);
+  border-bottom: 0.1em solid var(--primary-color);
 }
 
 .ExpElement:last-of-type {
