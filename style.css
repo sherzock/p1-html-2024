@@ -29,18 +29,18 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3vw;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2vw;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5vw;
 }
 
-p {
+a, p {
   font-size: 1vw;
 }
 
@@ -197,6 +197,17 @@ a,
   padding-top: 4em;
   padding-bottom: 4em;
   border-bottom: 0.1em solid var(--quaternary-color);
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 2em;
+  row-gap: 2em;
+  justify-content:start;
+  justify-items: start;
+  align-items: center;
+  align-content: space-evenly;
 }
 
 .Project:last-of-type {
@@ -204,22 +215,20 @@ a,
 }
 
 .ProjectGif {
-  grid-row: 1/4 ;
   height: auto;
   width: 100%;
   border-radius: 2em;
 }
 
 .PrjctInfo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  column-gap: 2em;
-  row-gap: 2em;
-  justify-content: center;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-items:flex-start;
   align-items: center;
-  align-content: space-evenly;
+}
+
+.InfoElement {
+  margin: 1vw;
 }
 
 /* Experience */
