@@ -1,16 +1,4 @@
 :root {
-  /*--primary-color: #e3e7af;
-  --secondary-color: #a2a77f;
-  --tertiary-color: #eff1c5;
-  --quaternary-color: #035e7b;
-  --quinary-color: #002e2c;
-  --senary-color: black; */
-
-  /*--primary-color: #BA9A5F;
-  --secondary-color: #C28C29;
-  --tertiary-color: #D1D0CD;
-  --quaternary-color: #F0CC8B;
-  --quinary-color: #B0770C;*/
   --primary-color: #355F35;
   --secondary-color: #7EBE7E;
   --tertiary-color: #233E23;
@@ -128,8 +116,6 @@ a,
 
 .svg {
   /* Color Filter for SVGs */
-  /*filter: invert(23%) sepia(53%) saturate(2117%) hue-rotate(167deg)
-    brightness(96%) contrast(98%);*/
     filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(250deg) brightness(105%) contrast(100%);
 }
 
@@ -266,3 +252,79 @@ a,
   75% { content: "Software";}
 }
 
+/*Phone*/
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  a, p {
+    font-size: 1em;
+  }
+
+  /* Header */
+
+.PresentationCard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6em;
+  padding: 2em;
+}
+
+.SocialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.PageButtons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+#Banner {
+  width: 20em;
+}
+
+/* Skills */
+
+.SkillsWrapper {
+flex-direction: column;
+}
+/* Education */
+
+.EducationTable {
+  grid-template-columns: 1fr;
+}
+
+/* Work */
+
+.Project {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.ProjectGif {
+  height: auto;
+  width: 100%;
+  border-radius: 2em;
+}
+
+.PrjctInfo {
+  display: flex;
+  flex-direction: column;
+  justify-items:flex-start;
+  align-items: center;
+}
+
+}
