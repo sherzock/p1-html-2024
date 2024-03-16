@@ -1,10 +1,23 @@
 :root {
-  --primary-color: #e3e7af;
+  /*--primary-color: #e3e7af;
   --secondary-color: #a2a77f;
   --tertiary-color: #eff1c5;
   --quaternary-color: #035e7b;
   --quinary-color: #002e2c;
+  --senary-color: black; */
+
+  /*--primary-color: #BA9A5F;
+  --secondary-color: #C28C29;
+  --tertiary-color: #D1D0CD;
+  --quaternary-color: #F0CC8B;
+  --quinary-color: #B0770C;*/
+  --primary-color: #355F35;
+  --secondary-color: #7EBE7E;
+  --tertiary-color: #233E23;
+  --quaternary-color: #4F694F;
+  --quinary-color: #91C591;
   --senary-color: black;
+  --white: white;
 }
 
 /*Basic types */
@@ -42,7 +55,7 @@ li {
 /* main Sections */
 
 .MainSection {
-  background-color: var(--primary-color);
+  background-color: var(--quaternary-color);
   padding: 4em;
   margin: 2em;
   border-radius: 2em;
@@ -51,11 +64,11 @@ li {
 /* Text classes */
 
 .Title {
-  color: var(--senary-color);
+  color: var(--white);
 }
 
 .Subtitle {
-  color: var(--quaternary-color);
+  color: var(--secondary-color);
 }
 
 /*Text IDs */
@@ -69,28 +82,23 @@ li {
   text-decoration: none;
   width: fit-content;
   height: fit-content;
-}
-
-.button-type1 {
-  box-sizing: border-box;
-  color: var(--quaternary-color);
-  border-color: var(--quaternary-color);
+  font-weight: bold;
+  
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
   border: solid;
   padding: 0.2em 0.4em;
-  font-weight: bold;
 }
 
-.button-type2 {
-  color: var(--senary-color);
+.button:hover {
+  color: var(--quaternary-color);
   background-color: var(--secondary-color);
-  padding: 0.3em 0.6em;
-  font-weight: 400;
 }
 
-.button-type3 {
-  color: var(--senary-color);
-  padding: 0.25em 0.5em;
-  font-weight: 400;
+.button:active {
+  color: var(--white);
+  border: none;
+  background-color: var(--quaternary-color)
 }
 
 /* Images */
@@ -113,14 +121,15 @@ li {
 
 a,
 .Description p {
-  color: var(--senary-color);
+  color: var(--white);
   width: auto;
 }
 
 .svg {
   /* Color Filter for SVGs */
-  filter: invert(23%) sepia(53%) saturate(2117%) hue-rotate(167deg)
-    brightness(96%) contrast(98%);
+  /*filter: invert(23%) sepia(53%) saturate(2117%) hue-rotate(167deg)
+    brightness(96%) contrast(98%);*/
+    filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(250deg) brightness(105%) contrast(100%);
 }
 
 /* Header */
