@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #7EBE7E;
-  --secondary-color: #4F694F;
+  --primary-color: #7ebe7e;
+  --secondary-color: #4f694f;
   --tertiary-color: white;
 }
 
@@ -24,7 +24,8 @@ h3 {
   font-size: 1.5vw;
 }
 
-a, p {
+a,
+p {
   font-size: 1vw;
 }
 
@@ -68,7 +69,7 @@ li {
   height: fit-content;
   font-weight: bold;
   border-radius: 2em;
-  
+
   color: var(--primary-color);
   border-color: var(--primary-color);
   border: solid;
@@ -83,7 +84,7 @@ li {
 .button:active {
   color: var(--tertiary-color);
   border: none;
-  background-color: var(--secondary-color)
+  background-color: var(--secondary-color);
 }
 
 /* Images */
@@ -112,7 +113,8 @@ a,
 
 .svg {
   /* Color Filter for SVGs */
-    filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(250deg) brightness(105%) contrast(100%);
+  filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(250deg)
+    brightness(105%) contrast(100%);
 }
 
 /* Header */
@@ -153,7 +155,6 @@ a,
   align-items: center;
 }
 
-
 .PageButtons {
   display: flex;
   flex-direction: row;
@@ -192,11 +193,10 @@ a,
   grid-template-rows: 1fr;
   column-gap: 2em;
   row-gap: 2em;
-  justify-content:start;
+  justify-content: start;
   justify-items: start;
   align-items: center;
   align-content: space-evenly;
-
 }
 
 article {
@@ -219,7 +219,7 @@ article:last-of-type {
 .PrjctInfo {
   display: flex;
   flex-direction: column;
-  justify-items:flex-start;
+  justify-items: flex-start;
   align-items: center;
 }
 
@@ -243,88 +243,91 @@ article:last-of-type {
 /* Animations */
 
 #spin:after {
-  content:"Game";
+  content: "Game";
   animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
-  25% { content: "Game";}
-  75% { content: "Software";}
+  25% {
+    content: "Game";
+  }
+  75% {
+    content: "Software";
+  }
 }
 
 /*Phone*/
 
 @media (max-width: 768px) {
-
   .button {
-    width:100%;
+    width: 100%;
     height: 100%;
   }
 
   h1 {
     font-size: 3em;
   }
-  
+
   h2 {
     font-size: 2em;
   }
-  
+
   h3 {
     font-size: 1.5em;
   }
-  
-  a, p {
+
+  a,
+  p {
     font-size: 1em;
   }
 
   /* Header */
 
-.PresentationCard {
-  display: flex;
-  flex-direction: column;
-  row-gap: 6em;
-  padding: 2em;
-}
+  .PresentationCard {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6em;
+    padding: 2em;
+  }
 
-.PageButtons {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1em;
-}
+  .PageButtons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+  }
 
-#Banner {
-  width: 20em;
-}
+  #Banner {
+    width: 20em;
+  }
 
-/* Skills */
+  /* Skills */
 
-.SkillsWrapper {
-flex-direction: column;
-}
-/* Education */
+  .SkillsWrapper {
+    flex-direction: column;
+  }
+  /* Education */
 
-.EducationTable {
-  grid-template-columns: 1fr;
-}
+  .EducationTable {
+    grid-template-columns: 1fr;
+  }
 
-/* Work */
+  /* Work */
 
-.Project {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+  .Project {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-.ProjectGif {
-  height: auto;
-  width: 100%;
-  border-radius: 2em;
-}
+  .ProjectGif {
+    height: auto;
+    width: 100%;
+    border-radius: 2em;
+  }
 
-.PrjctInfo {
-  display: flex;
-  flex-direction: column;
-  justify-items:flex-start;
-  align-items: center;
-}
-
+  .PrjctInfo {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+  }
 }
