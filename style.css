@@ -152,6 +152,8 @@ a,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
+  justify-items: center;
   align-items: center;
 }
 
@@ -178,7 +180,6 @@ a,
   align-content: space-evenly;
   align-items: center;
   gap: 4em;
-  margin: 2em;
 }
 /* Education */
 
@@ -190,8 +191,7 @@ a,
 /* Work */
 
 .Project {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-bottom: 4vw;
   border-bottom: 0.1em solid var(--quaternary-color);
 
 
@@ -256,6 +256,11 @@ a,
 
 @media (max-width: 768px) {
 
+  .button {
+    width:100%;
+    height: 100%;
+  }
+
   h1 {
     font-size: 3em;
   }
@@ -281,11 +286,6 @@ a,
   padding: 2em;
 }
 
-.SocialMedia {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-}
 .PageButtons {
   display: flex;
   flex-direction: column;
